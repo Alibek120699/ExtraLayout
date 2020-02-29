@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavigationBar from './components/molecules/NavigationBar';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const items = ['Главная', 'Компания', 'Контент', 'Рассылка', 'Статистика', 'Магазин', 'Marketplace'];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="navigation-bar__menu">
+        <NavigationBar items={items} />
+      </div>
+      <div>
+        Content
+      </div>
     </div>
   );
 }
