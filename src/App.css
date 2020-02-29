@@ -48,6 +48,7 @@
   height: 100vh;
   text-align: center;
   border-right: 1px solid #c4c4c4;
+  padding: 0 26px;
 }
 
 .navigation-bar__menu-item {
@@ -77,8 +78,18 @@
 }
 
 .navigation-bar__menu-header {
-  width: 100px;
-  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-bar__menu-header-image {
+  align-self: center;
+  width: 24px;
+  height: 24px;
+}
+
+.navigation-bar__menu-header-text {
+  margin: 0 20px;
 }
 
 .text-warning {
