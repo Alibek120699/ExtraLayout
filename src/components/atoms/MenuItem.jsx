@@ -1,17 +1,14 @@
 import React from 'react';
+import MenuIcon from './MenuIcon';
 
 const MenuItem = (props) => {
-    const { item } = props;
-    console.log(item);
-    return (
-        <div className="navigation-bar__menu-item">
-            <img
-              src={item.image}
-              alt="image"
-            />
-            {item.text}
-        </div>
-    );
-};
+  const { text, imageSrc } = props;
+  return (
+    <div className="navigation-bar__menu-item">
+      <p className="navigation-bar__menu-item-text">{text}</p>
+      <MenuIcon imageSrc={imageSrc} />
+    </div>
+  )
+}
 
 export default MenuItem;
